@@ -3,19 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desbrava</title>
+  <title>Desbrava — Mapa e Guia do Rio de Janeiro</title>
+  <meta name="description" content="Desbrava: mapa interativo dos 92 municípios do Rio de Janeiro, com história, curiosidades e pontos turísticos de cada cidade e 22 rotas temáticas." />
 
   <!-- Google AdSense: precisa estar presente na raiz do domínio pra o
        Google conseguir verificar o site (ver pvsm23/mapa-raspadinha-rj). -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7585588467751471"
      crossorigin="anonymous"></script>
 
-  <meta http-equiv="refresh" content="0; url=https://pvsm23.github.io/mapa-raspadinha-rj/" />
+  <!-- Redireciona a PESSOA pro app; o robô do Google ainda enxerga os
+       links abaixo e o sitemap (ver robots.txt). Pequeno atraso pra
+       não competir com o parse dos links. -->
   <script>
-    location.replace("https://pvsm23.github.io/mapa-raspadinha-rj/");
+    setTimeout(function () {
+      location.replace("https://pvsm23.github.io/mapa-raspadinha-rj/");
+    }, 800);
   </script>
 </head>
 <body>
-  <p>Redirecionando para o <a href="https://pvsm23.github.io/mapa-raspadinha-rj/">Desbrava</a>...</p>
+  <h1>Desbrava — Rio de Janeiro</h1>
+  <p>Mapa interativo dos 92 municípios do Rio de Janeiro, com a história e os pontos turísticos de cada cidade.</p>
+  <ul>
+    <li><a href="https://pvsm23.github.io/mapa-raspadinha-rj/">Abrir o mapa interativo</a></li>
+    <li><a href="https://pvsm23.github.io/mapa-raspadinha-rj/guia.html">Guia do Rio de Janeiro — história e pontos turísticos dos 92 municípios</a></li>
+  </ul>
+  <noscript>
+    <p><a href="https://pvsm23.github.io/mapa-raspadinha-rj/">Entrar no Desbrava</a></p>
+  </noscript>
 </body>
 </html>
